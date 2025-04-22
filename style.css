@@ -224,5 +224,21 @@ body {
     from, to { border-color: transparent }
     50% { border-color: #E76F51 }
   }
+  @media (max-width: 600px) {
+    .hero-text {
+      padding: 1rem;
+    }
   
+    .hero-text h1 {
+      font-size: 2rem;
+      white-space: normal;
+      border-right: none;
+      animation: fadeInUp 1s ease-in-out;
+    }
+  
+    .hero-text p {
+      font-size: 1rem;
+    }
+  }
+    
   
