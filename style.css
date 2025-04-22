@@ -142,3 +142,14 @@ body {
     50% { border-color: #A84328; }
   }
   
+  #animated-text {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #B84C2A; /* Brick orange */
+    animation: typing 2s steps(20), blink 0.75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid transparent;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* <<< This is the shadow */
+  }
+  
