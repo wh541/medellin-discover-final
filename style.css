@@ -98,4 +98,47 @@ body {
     margin-top: 0.5rem;
   }
   
+  /* Homepage animated headline setup */
+.hero-image {
+    background-image: url('https://plus.unsplash.com/premium_photo-1697729999190-4cd4ae78be26?q=80&w=2533&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A84328;
+    text-align: center;
+  }
+  
+  .hero-text h1,
+  #animated-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+    animation: typing 3.5s steps(24, end), blink-caret 0.75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #A84328;
+    color: #A84328;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-text p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    color: white;
+  }
+  
+  /* Typing animation */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #A84328; }
+  }
   
