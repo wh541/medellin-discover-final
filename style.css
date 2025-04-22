@@ -30,4 +30,17 @@ body {
   .container {
     max-width: 900px;
   }
+  /* Hero Section */
+.hero-section {
+    background-color: #f0f0f0;
+    color: #2e2e2e;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  /* Navbar Active Link Fix */
+  .navbar .nav-link.active {
+    color: #f8f8f8 !important;
+  }
+  
   
