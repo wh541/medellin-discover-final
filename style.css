@@ -1,0 +1,33 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f8f8f8;
+    color: #2e2e2e;
+  }
+  
+  h1, h2, h3 {
+    color: #3a3a3a;
+  }
+  
+  .navbar {
+    background-color: #2e2e2e;
+  }
+  
+  .navbar .nav-link {
+    color: #f8f8f8;
+    font-weight: 500;
+  }
+  
+  .navbar .nav-link.active,
+  .navbar .nav-link:hover {
+    color: #ffc857;
+  }
+  
+  footer {
+    background-color: #2e2e2e;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 900px;
+  }
+  
