@@ -141,7 +141,7 @@ body {
     from, to { border-color: transparent; }
     50% { border-color: #A84328; }
   }
-  
+
   #animated-text {
     font-size: 4rem;
     font-weight: 700;
@@ -152,4 +152,77 @@ body {
     border-right: 3px solid transparent;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* <<< This is the shadow */
   }
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('https://plus.unsplash.com/premium_photo-1697729999190-4cd4ae78be26?q=80&w=2533&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    z-index: 1;
+    animation: fadeInUp 1s ease-in-out;
+    max-width: 90%;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #E76F51;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    animation: typing 3s steps(20), blink .75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #E76F51;
+  }
+  
+  .hero-text p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  /* Mobile tweaks */
+  @media (max-width: 600px) {
+    .hero-text h1 {
+      font-size: 2rem;
+      white-space: normal;
+      border-right: none;
+      animation: fadeInUp 1s ease-in-out;
+    }
+  
+    .hero-text p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #E76F51 }
+  }
+  
   
