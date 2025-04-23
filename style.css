@@ -274,3 +274,20 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 }
+/* Mobile/Desktop Display Handling */
+.desktop-only { display: block; }
+.mobile-only { display: none; }
+
+@media (max-width: 600px) {
+  .desktop-only { display: none; }
+  .mobile-only {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #B2502D;
+    text-align: center;
+    margin-top: 0.5rem;
+    animation: fadeInUp 1s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
