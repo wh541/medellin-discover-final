@@ -257,4 +257,20 @@ body {
       font-size: 1rem;
     }
   }
-  
+  /* Desktop vs. Mobile Title Display */
+.desktop-only { display: block; }
+.mobile-only { display: none; }
+
+@media (max-width: 600px) {
+  .desktop-only { display: none; }
+  .mobile-only {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #B2502D;
+    text-align: center;
+    white-space: normal;
+    animation: fadeInUp 1s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
