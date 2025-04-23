@@ -239,13 +239,22 @@ body {
     .hero-text p {
       font-size: 1rem;
     }
-  }
+  }  
   @media (max-width: 600px) {
+    .hero-text {
+      padding: 1rem;
+    }
+  
     .hero-text h1 {
       font-size: 1.8rem;
-      white-space: normal; /* allows wrapping */
-      animation: fadeInUp 1s ease-in-out; /* simpler animation */
-      border-right: none; /* removes blinking cursor */
+      white-space: normal;          /* allow line breaks */
+      animation: fadeInUp 1s ease-in-out; /* gentle entrance */
+      border-right: none;           /* remove blinking cursor */
+      text-align: center;
     }
-  }    
+  
+    .hero-text p {
+      font-size: 1rem;
+    }
+  }
   
